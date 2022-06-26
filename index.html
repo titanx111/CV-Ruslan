@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #433A5E;
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+
+        * {
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+
+        }
+
+        /* span {
+            color: violet;
+        } */
+
+        .cyan-text,
+        .cyan-text a {
+            color: #00ECBB;
+        }
+
+        .white-text {
+            color: #fff;
+        }
+
+        .nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+            align-items: center;
+            gap: 20px;
+        }
+
+        /*.nav li {
+            /*display: inline-block;
+            /*padding-right: 10px;*/
+            /*padding-left: 10px;*/
+            /*font-size: 18px;
+        }*/
+
+        .nav a {
+            text-decoration: none;
+            color: #00ECBB;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: flex-start;
+            /*width: 110px;*/
+
+        }
+
+        .logo-text {
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif; 
+        }
+
+        .logo-text {
+            letter-spacing: .2rem;
+        }
+
+        .main-photo {
+            margin-bottom: 40px;
+            display: block;
+            max-width: 100%;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h4 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .main-section,
+        .violet-section {
+            background: #6A13EB;
+        }
+
+        .main-section,
+        .about-section
+        /*.violet-section*/ {
+            padding-top: 60px;
+            padding-bottom: 60px;
+            
+        }
+
+        .violet-section {
+            padding-top: 80px;
+            padding-bottom: 80px; 
+            background-image: url(img/credo-bg.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            width: 650px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        h1 {
+            font-size: 40px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        h2 {
+            color: #000;
+            font-size: 46px;
+            font-family: 'Open Sans Condensed', sans-serif;
+            margin-top: 8;
+            letter-spacing: 2px;
+        }
+
+        .back-work {
+            margin-top: 20px;
+        }
+
+        .grey-work {
+            margin-top: -2px;
+        }
+
+        h2 {
+            margin-top: 70px;
+        }
+
+        .main-section-img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .checkmark-list
+        .green-checkmark {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .green-checkmark {
+            column-count: 2;
+        }
+
+        .green-checkmark {
+            padding: 0px;
+            margin: 0px;
+            max-width: 100%;
+            min-height: 60px;
+            list-style-type: none;
+            margin-top: 0px;
+            padding-right: 80px;
+            margin-bottom: 20px;
+        }
+
+        .checkmark-list {
+            padding: 0px;
+            margin: 0px;
+            max-width: 100%;
+            min-height: 60px;
+            list-style-type: none;
+            margin-top: 0px;
+            padding-right: 80px;
+            margin-bottom: 20px;
+        }
+
+
+        .checkmark-list li {
+            background: url("img/icon-ok.png") no-repeat center left;
+            min-height: 60px;
+            padding-left: 80px;
+            margin-bottom: 20px;
+            list-style-type: none;
+            
+
+            /*list-style-image: url("img/icon-ok.png");*/
+        }
+
+        .green-checkmark li {
+            background: url("img/icon-ok-2.png") no-repeat center left;
+            min-height: 65px;
+            padding-left: 80px;
+            margin-bottom: 20px;
+            list-style-type: none;
+            /*display: flex;
+            align-items: center;
+            width: 100%;*/
+        }
+
+        .list-user {
+            List-style: none;
+            padding: 0;
+            margin: 0;
+            /*color: #000;
+            /*font-weight: bold;*/
+            font-size: 18px;
+            /*font-family: 'Open Sans', sans-serif;*/
+            /*letter-spacing: 2px;*/
+        }
+
+        .list-user li {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .principies {
+            font-size: 22px;
+        }
+
+        .list-user span {
+            color: #433A5E;
+            font-size: 18px;
+            font-weight: italic;
+        }
+
+        .about-text {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 40px;
+
+        }
+
+        .my-img {
+            border-radius: 50%;  
+        }
+
+        .p-large {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .circle-img {
+            border-radius: 50%
+        }
+
+        .img-wrap {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .circle-img {
+            display: inline-block;
+            margin-top: 0px;
+            padding: 20px;
+            height: 300px;
+            width: 400px;
+            text-align: start;
+        }
+
+        .flex-section {
+            display: flex;
+        }
+
+        #main-form {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        #main-form input,
+        #main-form textarea {
+            padding: 20px;
+            margin-bottom: 30px;
+            font-size: 22px;
+            font-family: 'Open Sans', sans-serif;
+            outline: none;
+            border: none;
+            font-weight: 700;
+            border: 3px solid #00ECBB;
+            width: 100%;
+
+        }
+
+        #main-form textarea {
+            height: 150px;
+        }
+
+        #main-form #submit {
+            width: 300px;
+            background: #00ECBB;
+            color: #6A13EB;
+            cursor: pointer;
+        }
+
+        .to-top {
+            position: fixed;
+            right: 100px;
+            bottom: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 76px;
+            min-height: 76px;
+            background: #00ECBB;
+            color: #6A13EB;
+            /*transform: rotate(180deg);*/
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .autor-block {
+            display: flex;
+            align-items: flex-end;
+            min-height: 500px;
+            padding: 30px 60px;
+            background-image: url(img/faman.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 0px -120px 50px 0px rgb(0 0 0 / 80%) inset; 
+        }
+
+        .autor-block p {
+            margin: 0;
+            line-height: 1.7;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        
+
+        /*p {
+            color: #433A5E;
+        }
+*/
+        /** {
+            font-family: Arial, sans-serif;
+        }*/
+    </style>
+</head>
+<body>
+    <div class="main-section" id="top">
+
+        <div class="container">
+
+            <ul class="cyan-text nav">
+                <li>
+                    <span class="cyan-text logo-text">РОМАН <br> ГРИБОВСЬКИЙ</span>        
+                </li>
+                
+                <li><a href="#work">Досвід роботи</a></li>
+                <li><a href="#achievement">Досягнення</a></li>
+                <li><a href="#storony">Сильні сторони</a></li>
+                <li><a href="#privat">Приватне</a></li>
+                <li><a href="#contact">Контакт</a></li>
+            </ul>
+
+        <div class="autor-block">
+            <p class="white-text">
+            Маркетолог, эксперт Фейсбук, Гугл
+            </P>
+        </div>
+
+
+        <!-- <img class="main-photo" src="img/faman 1 (1).jpg" alt="my photo" class="main-section-img"> -->
+
+        <h1 class="white-text">
+            Маркетолог: в Фейсбук, Гугл
+        </h1>
+
+        </div>    
+        <!--container-->       
+
+        
+    </div>
+
+<!-- main-section -->
+
+<div class="about-section" style="padding-bottom: 30px;" id="work">
+    <div class="container">
+
+        <h2 class="back-work">
+            Досвід роботи
+        </h2>
+
+        <ol class="list-user">
+            <li>
+                <span class="grey-text">квітень 2019 - травень 2020</span>: media buyer в компании "Cpaagregator"
+            </li>
+            <li>
+                <span class="grey-text">вересень 2020 - травень 2022</span>: media buyer в партнерской сети "Luckyconnect"
+            </li>
+        </ol>
+    </div>
+</div>    
+<!--about-section-->
+
+<div class="about-section" style="padding-bottom: 30px;" id="achievement">
+    <div class="container">
+
+        <h2 class="grey-work">
+        Мої найбільщі досягнення
+        </h2>
+        <p>
+            Головні професійні досягнення за останні роки:
+        </p>
+    <ul class="checkmark-list">
+        <li>
+            <h4>Підвищення по роботі</h4>
+        Квітень 2019 - компанія cpaagregator.com 
+        </li>
+    <li>
+        <h4>Підвищення по роботі</h4>
+        Квітень 2020 - компанія luckyconnect.com 
+        </li>
+        <li>
+            <h4>Занимался созданием аккаунтов фб, гугл</h4>
+            Регистрировал, проявлял активность, создавал страницы и посты
+        </li>
+    </ul>
+
+<div class="about-section flex-section" id="storony" style="padding-bottom: 30px;"></div>
+        <h2>
+        Мої сильні сторони
+        </h2>
+
+        <ul class="green-checkmark">
+            <li>
+                посидюча
+            </li>
+            <li>
+                стресостійка
+            </li>
+            <li>
+                комунікабельна
+            </li>
+            <li>
+                пью і не пьянію
+            </li>
+            <li>
+                самоорганізований
+            </li>
+            <li>
+                послідовний
+            </li>
+            <li>
+                врівноважений
+            </li>
+            <li>
+                наполеглевий
+            </li>
+        </ul>
+    </div>
+    <!-- container -->
+
+    <div class="violet-section">
+            <div class="container">
+                <h2 class="white-text">
+                    Мій принцип роботи
+                </h2>
+                <p class="white-text">
+                    <i>"Не нашкодь і інщі красиві слова"</i>
+                </p>
+            </div>  
+            <!--container-->
+    </div>
+
+    <!-- violet-section -->
+
+   
+<div class="about-section flex-section" id="privat" style="padding-bottom: 30px;">_</div>
+    <div class="container">
+
+        <h2>
+            Трохи про особисте:
+        </h2>
+        <p class="p-large">
+            Я люблю рисовать в фотошопе и иллюстраторе ,
+            начал этим заниматься в 12 лет, сидя дома за компьютером
+            сначала сложный труд становится легким, этот подход
+            никогда не подводил меня.
+        </p>
+    <div class="img-wrap"> 
+        <img class="circle-img" src="img/personal-img-1.png" alt="image 1">
+        <img class="circle-img" src="img/personal-img-2.png" alt="image 2">
+        <img class="circle-img" src="img/personal-img-3.png" alt="image 3">
+    </div>
+    <!-- container -->
+</div>
+<!-- about-section -->
+
+
+<div class="about-section contact-section" id="contact">
+    <div class="container">
+        <h2>
+            Контакт
+        </h2>
+        <form action="#" method="post" id="main-form">
+            <input type="text" name="name" placeholder="ПІБ">
+            <input type="mail" name="email" placeholder="email">
+            <textarea name="message" placeholder="Повідомлення"></textarea>
+            <input type="submit" value="Відправити" id="submit"> 
+            <!--<button type="submit">Відправити</button>-->
+        </form>
+    </div>
+    <!-- container -->
+
+    <a href="#top" class="to-top">/\</a>
+</div>
+    <!-- about-section -->
+
+</body>
+</html>
